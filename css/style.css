@@ -9,6 +9,7 @@
 
 main {
     background-color: #e7f6f6;
+    padding-bottom: 50px;
 }
 
 .navigator :hover {
@@ -98,6 +99,49 @@ footer {
 
 .callmebaby {
     font-size: 36px;
+}
+
+.pranks {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 10%;
+    margin-inline-end: 10%;
+}
+
+.pranks :nth-child(2n+1) {
+    justify-self: flex-start;
+    flex-direction: row;
+}
+
+.pranks :nth-child(2n) {
+    justify-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.prank {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.prank>p {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.prank>img {
+    width: 150px;
+    height: 150px;
+}
+
+.main-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 * {
